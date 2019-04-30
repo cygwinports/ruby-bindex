@@ -1,0 +1,12 @@
+inherit rubygem
+
+NAME="ruby-bindex"
+VERSION=0.5.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby bindings for exceptions"
+DESCRIPTION="Bindings for your Ruby exceptions"
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_bindex_CONTENTS="${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_bindex_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
